@@ -185,7 +185,7 @@ def transcribe() -> Any:
                 'transcriber.transcribe',
                 args=(filename, requestedModel, task, language, email, webhook_id),
                 result_ttl=3600*24*7,
-                job_timeout=3600*4,
+                job_timeout=3600*24,
                 meta={
                     'email': email,
                     'webhook_id': webhook_id,
